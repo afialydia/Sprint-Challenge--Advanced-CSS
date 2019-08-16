@@ -1,1 +1,26 @@
 // Mixins Here
+
+.center() {
+    display:flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.flip(){
+    background: @btn-font;
+    color: @btn-bg-color;
+}
+
+// PARAMETRIC MIXIN//
+
+.bttn(@btn-bg-color,@btn-font){
+    background: @btn-bg-color;
+    border-radius: 8px;
+    color: @btn-font;
+    width: 30%; 
+    height: 100%;
+    padding: 2%;
+    font-size:1.5rem;
+}
+
+
